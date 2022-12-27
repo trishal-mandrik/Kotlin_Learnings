@@ -1,3 +1,5 @@
+import java.sql.DriverManager.println
+
 class myClass{
     private var name: String = "helloworld.com"
 
