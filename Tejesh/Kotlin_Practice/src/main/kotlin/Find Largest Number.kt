@@ -1,3 +1,5 @@
+import java.lang.Double.max
+
 // Find the largest number using if elseif else statement
 /*
 fun main(args: Array<String>) {
@@ -15,6 +17,7 @@ fun main(args: Array<String>) {
 */
 
 // Find the largest number using when statement
+/*
 fun main(args: Array<String>) {
     val n1 = 13.81
     val n2 = 66.48
@@ -26,3 +29,13 @@ fun main(args: Array<String>) {
         n3 >= n1 && n3 >= n2 -> println("$n3 is the largest number")
     }
 }
+*/
+
+fun main(args: Array<String>) {
+    val n1 = 13.81
+    val n2 = 66.48
+    val n3 = 37.53
+
+    println(max(max(n1, n2), n3))
+}
+
