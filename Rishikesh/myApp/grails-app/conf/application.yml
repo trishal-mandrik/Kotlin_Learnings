@@ -103,6 +103,7 @@ hibernate:
         queries: false
         use_second_level_cache: false
         use_query_cache: false
+# default config start
 dataSource:
     pooled: true
     jmxExport: true
@@ -123,6 +124,9 @@ environments:
         dataSource:
             dbCreate: none
             url: jdbc:h2:./prodDb;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+
+
+            # Default config end
             properties:
                 jmxEnabled: true
                 initialSize: 5
@@ -141,3 +145,8 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+
+
+# to change server port use following code
+server:
+    port : 8000
