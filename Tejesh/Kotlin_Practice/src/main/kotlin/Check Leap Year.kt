@@ -1,7 +1,7 @@
 import java.util.Scanner
 
 //Program to check leap year using if else statement
-/*
+
 fun main(args: Array<String>) {
     var reader = Scanner(System.`in`)
     print ("Enter a year: ")            //user input
@@ -17,9 +17,10 @@ fun main(args: Array<String>) {
         leap = false
     println(if (leap) "$year is a leap year." else "$year is not a leap year.")
 }
-*/
+
 
 // Program to check leap year using when statement
+/*
 fun main(args: Array<String>) {
     var reader = Scanner(System.`in`)
     print("Enter a year: ")           //user input
@@ -37,3 +38,4 @@ fun main(args: Array<String>) {
     }
     println(if (leap)"$year is a leap year." else "$year is not a leap year.")
 }
+*/
