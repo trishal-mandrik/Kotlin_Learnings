@@ -36,7 +36,23 @@ fun main(){
 
     players.add("Eli")
     players += "Gina"
-    players += "Kavi"
+//    players += "Kavi"
     println(players.joinToString())
-    
+    players.add(5, "Frank")
+    println(players.joinToString())
+
+    val wasPlayerRemoved = players.remove("Gina")
+    println("It is $wasPlayerRemoved that Gina was removed")
+
+    val removedPlayer = players.removeAt(2)
+    println("$removedPlayer was removed")
+    println(players.joinToString())
+    println("Dan position is ${players.indexOf("Dan")}")
+
+    players[4] = "Franklin"
+    println(players.joinToString())
+
+    players[3] = "Anna"
+    players.sort()
+    println(players.joinToString())
 }
