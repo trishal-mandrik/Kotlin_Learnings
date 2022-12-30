@@ -55,4 +55,33 @@ fun main(){
     players[3] = "Anna"
     players.sort()
     println(players.joinToString())
+
+    val scores = listOf(2,2,8,6,1)
+
+    for(player in players) {
+        println(player)
+    }
+
+    for((index, player) in players.withIndex()) {
+        println("${index + 1}. $player")
+    }
+
+    fun sumOfElements(list: List<Int>) :Int {
+        var sum = 0
+        for(number in list){
+            sum += number
+        }
+        return sum
+    }
+
+    println(sumOfElements(scores))
+
+    var nullable: List<Int>? = listOf(1,2,3,4)
+
+    nullable = null
+
+    var listOfNullables: List<Int?> = listOf(1,2,null, 4)
+
+    var nullableListOfNullables: List<Int?>? = listOf(1,2,null,4)
+    nullableListOfNullables = null;
 }
