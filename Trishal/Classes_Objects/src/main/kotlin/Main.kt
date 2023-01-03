@@ -1,14 +1,7 @@
-import java.sql.DriverManager.println
+fun main(args: Array<String>) {
+    println("Hello World!")
 
-class myClass{
-    private var name: String = "helloworld.com"
-
-    fun printMe() {
-        println("The best learning website - " + name)
-    }
-}
-
-fun main(){
-    val obj = myClass()
-    obj.printMe()
+    // Try adding program arguments via Run/Debug configuration.
+    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
+    println("Program arguments: ${args.joinToString()}")
 }
