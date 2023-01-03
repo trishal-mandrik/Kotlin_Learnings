@@ -23,7 +23,7 @@ class WebApp {
     @ResponseBody
 	fun Greeting (): String {
 		val message = """SPRINGER NATURE 🏢
-			|Welcome to SNTPS..""".trimMargin()
+			|Welcome to SNTPS.."""
 		return message
 	}
 	 //http://localhost:8080/user/{Tejesh} -> Hello Tejesh ,Welcome to SN DIGITAL..
