@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     }
      */
 
-    /*
+ /*
     val x: Int = 40
     var y: Int = 20
     val z: Int = 30
@@ -56,7 +56,7 @@ fun main(args: Array<String>) {
     var phonenumber = 9878800989878L // Long Datatype
     var price = 789.45f //float datatype
     var totalcost = 4576526.4357 //double datatype
-    var Name = "Ravi"  //String
+    var Name = "Tejesh"  //String
     var Gender = 'M'   //char datatype
     var istrue = "true" //boolean
 
