@@ -25,6 +25,7 @@ fun main(args: Array<String>) {
        }
     } else {
         println("Invalid entry!! Please try entering from 1 to 7.")
+
     }
 
     print("Enter any alphabet from a to g: ")

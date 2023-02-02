@@ -47,7 +47,7 @@ fun main(args: Array<String>){
     \t - Inserts tab
     \b - Inserts backspace
     \n - Inserts newline
-    \r - Inserts carriage return
+    \r - Inserts carriage return (replace)
     \' - Inserts single quote character
     \" - Inserts double quote character
     \\ - Inserts backslash

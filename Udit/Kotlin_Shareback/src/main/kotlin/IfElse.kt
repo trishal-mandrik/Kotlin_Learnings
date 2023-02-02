@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
 
         val result2 = if (age > 19) {
             "Adult"
-        } else if ( age > 12){
+        } else if (age > 12){
             "Teen"
         } else {
             "Minor"
@@ -33,8 +33,6 @@ fun main(args: Array<String>) {
             "Minor"
         }
         println(result3)
-
-
     } else {
         println("Please enter valid human age")
     }
