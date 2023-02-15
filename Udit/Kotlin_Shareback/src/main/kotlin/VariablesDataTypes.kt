@@ -1,4 +1,5 @@
 import java.util.*
+import kotlin.system.exitProcess
 
 fun main(args: Array<String>){
 
@@ -64,5 +65,14 @@ fun main(args: Array<String>){
     println("$")
     println("\$a")
     println("$a")
+
+
+
+    val arr = arrayOf(1,2,3)
+
+    for (i in arr) println(i)
+    arr[0] = 2000
+    println()
+    for (i in arr) println(i)
 
 }
