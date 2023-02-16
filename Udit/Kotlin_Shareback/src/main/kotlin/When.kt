@@ -43,4 +43,8 @@ fun main(args: Array<String>) {
     }
     println(resultt)
 
+    val abcd: Pair<Int, String> = Pair(1, "Udit")
+    val bcde: Pair<Int, String> = Pair(2, "Rushikesh")
+    val emp = mapOf(abcd, bcde)
+
 }
