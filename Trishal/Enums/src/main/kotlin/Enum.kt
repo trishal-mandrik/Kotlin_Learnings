@@ -6,7 +6,8 @@ enum class CreditCardType {
 
 fun main(args: Array<String>) {
 //    Enum constants are objects of enum class type
-    val value: CreditCardType = CreditCardType.GOLD
+    val peterCarType: CreditCardType = CreditCardType.GOLD
+    println(peterCarType)
 
 //    each enum object has two properties: ordinal and name
     println(CreditCardType.GOLD.ordinal)
@@ -15,4 +16,11 @@ fun main(args: Array<String>) {
 //    Each enum object has two methods: values() and valueOf
     val myConstants: Array<CreditCardType> = CreditCardType.values()
     myConstants.forEach { println(it) }
+
+//    using in 'when' statement
+    when(peterCarType){
+        CreditCardType.SILVER -> println("Peter has silver card")
+        CreditCardType.GOLD -> println("Peter has gold card")
+        CreditCardType.PLATINUM -> println("Peter has platinum card")
+    }
 }

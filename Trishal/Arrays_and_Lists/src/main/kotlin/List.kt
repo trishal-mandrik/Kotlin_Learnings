@@ -1,5 +1,6 @@
 fun main(){
     val innerPlanets = listOf("Mercury", "Venus", "Earth", "Mars")
+    println(innerPlanets)
     val innerPlanetsArrayList = arrayListOf("Mercury", "Venus", "Earth", "Mars")
 
     val outerPlanets = mutableListOf("Jupiter", "Saturn", "Uranus", "Neptune")
