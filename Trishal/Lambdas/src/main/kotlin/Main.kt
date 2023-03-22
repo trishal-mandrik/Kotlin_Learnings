@@ -1,5 +1,9 @@
+import java.lang.NullPointerException
+
 //Lambda is used to break up code into reusable chunks
 //Generally used when dealing with collections such as an array or map
+
+// REFER THE KOTLIN APPRENTICE BOOK FOR LAMBDAS
 
 fun main() {
 
@@ -40,4 +44,37 @@ fun main() {
 
     //New declaration
     val sqaure: (Int) -> Int = {it * it}
+
+    operateOnNumbers(2, 18, multiplyLambda)
+    operateOnNumbers(2, 18, operation = multiplyLambda) //can also write like this
+    operateOnNumbers(2, 18, operation = ::addFunction) // can also pass normal func as parameter using ::(reference operator)
+
+    var unitLambda : () -> Unit = {
+        println("Kotlin Apprentice is awesome!")
+    }
+    unitLambda()
+
+    var nothingLambda: () -> Nothing = {
+        throw NullPointerException()
+    }
+//    nothingLambda()
+
+    val values = listOf(1,2,3,4,5,6)
+    values.forEach {
+        println("$it: ${it * it}")
+    }
+}
+
+fun operateOnNumbers(
+    a: Int,
+    b: Int,
+    operation: (Int, Int) -> Int
+) : Int {
+    val result = operation(a, b)
+    println(result)
+    return result
+}
+
+fun addFunction(a: Int, b: Int): Int {
+    return a + b
 }

@@ -8,6 +8,8 @@
 //class Car(var brand: String, var model: String, var year: Int)
 class Car(var brand: String, var model: String, var year: Int) {
     //class function
+    constructor(brand: String,model: String):this(model,brand,1)
+
     fun drive(){
         println("Wrooom")
     }
