@@ -9,7 +9,6 @@ data class Coffee(val name: String, val price: Double, val size: String) {
     }
 
     override fun toString(): String {
-        return "name=$name Size=$size price=$price"
+        return "$name(Size=$size Price=$price RS)"
     }
-
 }
