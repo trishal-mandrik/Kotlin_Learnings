@@ -1,14 +1,8 @@
 package com.coffeeapp.domain
 
 
-data class Coffee(val name: String, val price: Double, val size: String) {
-    val id: Int = counter++
-
-    companion object {
-        var counter = 1;
-    }
-
+class Coffee(id: Int, name: String, price: Double = 0.0) : Item(id, name, price) {
     override fun toString(): String {
-        return "$name(Size=$size Price=$price RS)"
+        return "Coffee(${super.toString()})"
     }
 }
