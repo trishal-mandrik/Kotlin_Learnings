@@ -1,3 +1,5 @@
+import kotlinx.coroutines.Deferred
+import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
@@ -6,15 +8,19 @@ import kotlin.system.measureTimeMillis
 fun main() {
     val time = measureTimeMillis {
         runBlocking {
-            println("Weather App is running!")
+            println("Weather Forecast")
 
-            launch {
-                printForecast()
+            val forecast: Deferred<String> = async {
+                getForecast()
             }
 
-            launch {
-                printTemperature()
+            val temperature: Deferred<String> = async {
+                getTemperature()
             }
+
+            println("Fetching data...")
+            println("Forecast: ${forecast.await()}")
+            println("Temperature: ${temperature.await()}")
 
             println("Connection closed!")
         }
@@ -22,12 +28,12 @@ fun main() {
     println("Execution time: ${time / 1000}s")
 }
 
-suspend fun printForecast() {
+suspend fun getForecast(): String {
     delay(2000)
-    println("Forecast: Sunny for the next 5 days")
+    return "Sunny"
 }
 
-suspend fun printTemperature() {
+suspend fun getTemperature(): String {
     delay(2000)
-    println("Current Temperature: 25°C")
+    return "25°C"
 }
