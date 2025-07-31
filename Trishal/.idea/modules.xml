@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Companion Object/Companion Object.iml" filepath="$PROJECT_DIR$/Companion Object/Companion Object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Enums-oops/Enums-oops.iml" filepath="$PROJECT_DIR$/Enums-oops/Enums-oops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interfaces/Interfaces.iml" filepath="$PROJECT_DIR$/Interfaces/Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lambdas/Lambdas.iml" filepath="$PROJECT_DIR$/Lambdas/Lambdas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lambdas.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Lambdas.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lambdas.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Lambdas.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nullability1/Nullability1.iml" filepath="$PROJECT_DIR$/Nullability1/Nullability1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nullability2/Nullability2.iml" filepath="$PROJECT_DIR$/Nullability2/Nullability2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Trishal.iml" filepath="$PROJECT_DIR$/.idea/Trishal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classes-oops/classes-oops.iml" filepath="$PROJECT_DIR$/classes-oops/classes-oops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-classes/data-classes.iml" filepath="$PROJECT_DIR$/data-classes/data-classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/object-class/object-class.iml" filepath="$PROJECT_DIR$/object-class/object-class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sealed-class/sealed-class.iml" filepath="$PROJECT_DIR$/sealed-class/sealed-class.iml" />
+    </modules>
+  </component>
+</project>
